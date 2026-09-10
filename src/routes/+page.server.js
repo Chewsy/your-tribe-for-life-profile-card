@@ -1,13 +1,8 @@
 const endpoint = "https://fdnd.directus.app/items/person/262";
 
-export function load() {
+export async function load() {
+    const res = await fetch(endpoint);
+    const { data } = await res.json();
 
-    const chama = fetch(endpoint)
-
-        .then((res) => res.json())
-        .then(({ data }) => {
-            return data;
-        })
-
-    return { chama };
+    return { chama: data };
 }
