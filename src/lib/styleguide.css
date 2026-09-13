@@ -20,7 +20,9 @@
     /* Kleuren */
     --dark-blue: hsl(205, 38%, 64%);
     --baby-blue: hsl(212, 25%, 88%);
-    --color: hsl(0, 0%, 0%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+
 
     --background: var(--baby-blue);
     --accent: var(--dark-blue);
@@ -55,7 +57,7 @@ html {
     font-size: var(--font-size);
     line-height: var(--line-height);
     background: var(--background);
-    color: var(--color);
+    color: var(--black);
 
     padding: var(--spacing-label);
 }
