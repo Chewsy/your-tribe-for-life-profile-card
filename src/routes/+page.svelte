@@ -1,4 +1,6 @@
 <script>
+	import '$lib/styleguide.css';
+
     import NameField from "$lib/NameField.svelte";
     import TextField from "$lib/TextField.svelte";
 
@@ -19,16 +21,9 @@
 </main>
 
 <style>
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* ! Tijdelijk ! */
-    main {
-        width: 100dvw;
-        height: 100dvh;
-        background-color: gray;
-    }
+main{
+    display: flex;
+    flex-direction: column;
+    gap: var(--default-spacing);
+}
 </style>
