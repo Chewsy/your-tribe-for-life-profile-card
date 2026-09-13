@@ -20,7 +20,7 @@
 
         & .text {
             width: 100px;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid hsl(0, 0%, 0%);
         }
     }
 </style>

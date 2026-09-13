@@ -34,7 +34,7 @@
             padding: 0;
             background-color: hsl(0, 0%, 100%);
             aspect-ratio: 1 / 1;
-            width: 1.25em;
+            width: 1.5em;
             text-align: center;
         }
     }
