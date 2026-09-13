@@ -1,0 +1,57 @@
+/* Fira Sans - zie static/fonts/OFL.txt (SIL Open Font License 1.1) */
+@font-face {
+    font-family: "Fira Sans";
+    src: url("/fonts/FiraSans-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("/fonts/FiraSans-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+
+    /* Kleuren */
+    --dark-blue: hsl(205, 38%, 64%);
+    --baby-blue: hsl(212, 25%, 88%);
+    --color: hsl(0, 0%, 0%);
+
+    --background: var(--baby-blue);
+    --accent: var(--dark-blue);
+
+    /* Lettertype */
+    --font: "Fira Sans", system-ui, sans-serif;
+    --font-size: 1em;
+    /* volgens a11y */
+    --line-height: 1.5;
+    /* volgens a11y */
+
+    /* Spacing (padding, margin etc) */
+    --default-spacing: 0.938em;
+    --spacing-label: 3.125em;
+
+
+    /* Border radius - 10px */
+    --radius: 0.625em;
+}
+
+/* Global styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    background: var(--background);
+    color: var(--color);
+}
