@@ -7,8 +7,10 @@
 </script>
 
 <main>
-    <img src={mugshot} alt={`Foto van ${data.chama.name}`} width="100px" />
-    <NameField chama={data.chama} />
+    <!-- <img src={mugshot} alt={`Foto van ${data.chama.name}`} width="100px" /> -->
+
+    <NameField text={chama.name} label="Volledige naam:" />
+    <NameField text={chama.nickname} label="Nickname:" />
 </main>
 
 <style>

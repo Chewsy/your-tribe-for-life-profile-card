@@ -1,10 +1,10 @@
 <script>
-    let { chama } = $props();
-    const letters = $derived(chama.name.toUpperCase().split(""));
+    let { text, label } = $props();
+    const letters = $derived(text.toUpperCase().split(""));
 </script>
 
 <div class="name-field">
-    <p>Volledige naam:</p>
+    <p>{label}</p>
 
     <div class="letters">
         {#each letters as letter}
