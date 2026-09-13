@@ -33,7 +33,9 @@
     /* volgens a11y */
 
     /* Spacing (padding, margin etc) */
+    --large-spacing: 1.563em;
     --default-spacing: 0.938em;
+    --small-spacing: 0.313em;
     --spacing-label: 3.125em;
 
 
@@ -54,4 +56,6 @@ html {
     line-height: var(--line-height);
     background: var(--background);
     color: var(--color);
+
+    padding: var(--spacing-label);
 }
