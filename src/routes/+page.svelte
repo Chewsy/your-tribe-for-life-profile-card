@@ -1,9 +1,12 @@
 <script>
     import NameField from "$lib/NameField.svelte";
+    import TextField from "$lib/TextField.svelte";
 
     let { data } = $props();
     const chama = $derived(data.chama);
-    const mugshot = $derived(`https://fdnd.directus.app/assets/${chama.mugshot}`);
+    const mugshot = $derived(
+        `https://fdnd.directus.app/assets/${chama.mugshot}`,
+    );
 </script>
 
 <main>
@@ -11,6 +14,8 @@
 
     <NameField text={chama.name} label="Volledige naam:" />
     <NameField text={chama.nickname} label="Nickname:" />
+
+    <TextField text={chama.birthdate} label="Geboortedatum:" />
 </main>
 
 <style>
