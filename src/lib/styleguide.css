@@ -29,6 +29,7 @@
 
     /* Lettertype */
     --font: "Fira Sans", system-ui, sans-serif;
+    --font-bold: 700;
     --font-size: 1em;
     /* volgens a11y */
     --line-height: 1.5;

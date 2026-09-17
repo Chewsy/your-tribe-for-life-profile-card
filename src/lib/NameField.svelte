@@ -4,7 +4,7 @@
 </script>
 
 <div class="name-field">
-    <p>{label}</p>
+    <p class="label">{label}</p>
 
     <div class="letters">
         {#each letters as letter}
@@ -23,6 +23,10 @@
         display: flex;
         flex-direction: row;
         gap: 3.125em;
+    }
+
+    .label {
+        font-weight: var(--font-bold);
     }
 
     .letters {

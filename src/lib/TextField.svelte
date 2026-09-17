@@ -22,5 +22,9 @@
             width: 100px;
             border-bottom: 1px solid hsl(0, 0%, 0%);
         }
+
+        & .label{
+            font-weight: var(--font-bold);
+        }
     }
 </style>

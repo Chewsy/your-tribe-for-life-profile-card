@@ -32,4 +32,24 @@
         border-bottom: 2px solid var(--dark-blue);
         margin-bottom: var(--large-spacing);
     }
+
+    section {
+        margin-bottom: var(--large-spacing);
+    }
+
+    h2 {
+        color: var(--white);
+        background-color: var(--dark-blue);
+        padding-left: var(--small-spacing);
+        margin-bottom: var(--default-spacing);
+    }
+
+    .bio-text {
+        border-bottom: 1px solid hsl(0, 0%, 0%);
+        width: 300px;
+    }
+
+    .label {
+        font-weight: var(--font-bold);
+    }
 </style>
