@@ -67,6 +67,8 @@ html {
     }
 
     @media (width >1200px) {
+        background-image: url("https://www.texturex.com/wp-content/uploads/texturex/2018/03/wood-texture-natural-grain-panel-plank-table-wallpaper-5.jpg");
+        background-size: cover;
         padding-left: 15em;
         padding-right: 15em;
     }
