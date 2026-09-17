@@ -1,14 +1,18 @@
 <script>
     let { text, label } = $props();
-    const letters = $derived(text.toUpperCase().split(""));
+    const words = $derived(text.toUpperCase().split(" "));
 </script>
 
 <div class="name-field">
     <p class="label">{label}</p>
 
     <div class="letters">
-        {#each letters as letter}
-            <span class="letter">{letter === " " ? "\u00A0" : letter}</span>
+        {#each words as word}
+            <div class="word">
+                {#each word.split("") as letter}
+                    <span class="letter">{letter}</span>
+                {/each}
+            </div>
         {/each}
     </div>
 </div>
