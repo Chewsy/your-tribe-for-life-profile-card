@@ -44,4 +44,27 @@
         width: 1.5em;
         text-align: center;
     }
+
+    @media (width <= 790px) {
+        .letters {
+            gap: var(--default-spacing);
+        }
+    }
+
+    @media (width <= 600px) {
+        .letters {
+            flex-direction: column;
+            gap: var(--small-spacing);
+        }
+    }
+
+    @media (width <= 375px) {
+        .letter {
+            width: 1.25em;
+        }
+
+        .word {
+            gap: 0.5em;
+        }
+    }
 </style>
