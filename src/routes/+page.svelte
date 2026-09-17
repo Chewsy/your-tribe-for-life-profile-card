@@ -13,9 +13,10 @@
 </script>
 
 <main>
-    <!-- <img src={mugshot} alt={`Foto van ${data.chama.name}`} width="100px" /> -->
-
-    <h1>Visitekaartje</h1>
+    <header>
+        <h1>Visitekaartje</h1>
+        <img src={mugshot} alt={`Foto van ${data.chama.name}`} width="100px" />
+    </header>
 
     <h2>Persoonlijke gegevens</h2>
     <section>
@@ -79,10 +80,40 @@
         }
     }
 
-    h1 {
-        padding-bottom: var(--small-spacing);
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--default-spacing);
         border-bottom: 2px solid var(--dark-blue);
+        padding-bottom: var(--small-spacing);
         margin-bottom: var(--large-spacing);
+
+        & img {
+            width: 150px;
+            aspect-ratio: 1 / 1;
+            transform: rotate(-21deg);
+            transform-origin: center center;
+            border: 5px solid var(--white);
+            object-fit: cover;
+
+            box-shadow:
+                rgba(0, 0, 0, 0.09) 0px 2px 1px,
+                rgba(0, 0, 0, 0.09) 0px 4px 2px,
+                rgba(0, 0, 0, 0.09) 0px 8px 4px,
+                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+
+        & h1 {
+            margin: 0;
+        }
+
+        @media (width <= 530px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     section {
