@@ -15,9 +15,31 @@
     <!-- <img src={mugshot} alt={`Foto van ${data.chama.name}`} width="100px" /> -->
 
     <h1>Visitekaartje</h1>
-    <NameField text={chama.name} label="Volledige naam:" />
-    <NameField text={chama.nickname} label="Nickname:" />
-    <TextField text={chama.birthdate} label="Geboortedatum:" />
+
+    <section>
+        <h2>Persoonlijke gegevens</h2>
+        <NameField text={chama.name} label="Volledige naam:" />
+        <NameField text={chama.nickname} label="Nickname:" />
+        <TextField text={chama.birthdate} label="Geboortedatum:" />
+        <TextField text="Vrouw" label="Geslacht:" />
+        <TextField text={chama.residency} label="Woonplaats:" />
+        <TextField text="262" label="ID:" />
+
+        <div class="bio">
+            <p class="label">Introductie:</p>
+            <p class="bio-text">{chama.bio}</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>favorieten</h2>
+        <TextField text={chama.fav_color} label="Kleur:" />
+        <TextField text={chama.fav_border_radius} label="Border-radius waarde:" />
+        <TextField text={chama.fav_season} label="Seizoen:" />
+        <TextField text={chama.fav_game} label="Gameseries:" />
+        <TextField text={chama.fav_emoji} label="Emoji:" />
+        <TextField text={chama.fav_animal} label="Dier:" />
+    </section>
 </main>
 
 <style>
