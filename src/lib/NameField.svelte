@@ -25,9 +25,14 @@
 
     .name-field {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--small-spacing);
         margin-bottom: var(--default-spacing);
+
+        @media (width <= 426px) {
+            flex-direction: column;
+            gap: var(--small-spacing);
+        }
     }
 
     .label {
@@ -36,8 +41,12 @@
 
     .letters {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: var(--small-spacing);
+
+        @media (width <= 426px) {
+            flex-direction: column;
+        }
     }
 
     .word {
