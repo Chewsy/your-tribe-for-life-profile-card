@@ -93,7 +93,7 @@
 
     .bio-text {
         border-bottom: 1px solid hsl(0, 0%, 0%);
-        width: 300px;
+        width: 18.75em;
 
         @media (width <= 426px) {
             width: auto;
