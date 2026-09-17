@@ -25,8 +25,8 @@
 
     .name-field {
         display: flex;
-        flex-direction: row;
-        gap: 3.125em;
+        flex-direction: column;
+        gap: var(--small-spacing);
         margin-bottom: var(--default-spacing);
     }
 
@@ -36,15 +36,18 @@
 
     .letters {
         display: flex;
-        gap: 0.625em;
+        flex-direction: column;
+        gap: var(--small-spacing);
+    }
 
-        & .letter {
-            margin: 0;
-            padding: 0;
-            background-color: hsl(0, 0%, 100%);
-            aspect-ratio: 1 / 1;
-            width: 1.5em;
-            text-align: center;
-        }
+    .word {
+        display: flex;
+        gap: 0.625em;
+        font-size: var(--font-size);
+    }
+
+    .letter {
+        background-color: var(--white);
+        text-align: center;
     }
 </style>
