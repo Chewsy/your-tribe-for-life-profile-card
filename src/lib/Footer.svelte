@@ -24,7 +24,7 @@
         <span>{chama.github_handle}</span>
     </a>
 
-    <a class="social_link" href="https://www.{chama.name}.nl">
+    <a class="social_link" href="{chama.website}">
         <svg
             fill="#ffffff"
             viewBox="0 0 32 32"
@@ -60,4 +60,15 @@
         margin-bottom: var(--default-spacing);
     }
 
+    .social_link {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: 0.313em;
+
+        & svg {
+            width: 1.5em;
+            aspect-ratio: 1 / 1;
+        }
+    }
 </style>
