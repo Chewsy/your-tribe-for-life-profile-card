@@ -51,14 +51,14 @@
         }
     }
 
-    @media (width <= 600px) {
+    @media (width <= 700px) {
         .letters {
             flex-direction: column;
             gap: var(--small-spacing);
         }
     }
 
-    @media (width <= 375px) {
+    @media (width <= 450px) {
         .letter {
             width: 1.25em;
         }

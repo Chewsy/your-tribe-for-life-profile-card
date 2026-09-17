@@ -77,7 +77,7 @@
         row-gap: var(--large-spacing);
         column-gap: 8em;
 
-        @media (width <= 426px) {
+        @media (width <= 530px) {
             grid-template-columns: 1fr;
         }
     }
