@@ -16,8 +16,8 @@
 
     <h1>Visitekaartje</h1>
 
+    <h2>Persoonlijke gegevens</h2>
     <section>
-        <h2>Persoonlijke gegevens</h2>
         <NameField text={chama.name} label="Volledige naam:" />
         <NameField text={chama.nickname} label="Nickname:" />
         <TextField text={chama.birthdate} label="Geboortedatum:" />
@@ -31,8 +31,8 @@
         </div>
     </section>
 
+    <h2>favorieten</h2>
     <section>
-        <h2>favorieten</h2>
         <TextField text={chama.fav_color} label="Kleur:" />
         <TextField
             text={chama.fav_border_radius}
@@ -71,6 +71,10 @@
 
     section {
         margin-bottom: var(--large-spacing);
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        justify-content: space-between;
+        row-gap: var(--large-spacing);
     }
 
     h2 {
@@ -81,23 +85,11 @@
     }
 
     .bio {
-        display: flex;
-        flex-direction: row;
-        gap: 3.125em;
-
-        @media (width <= 426px) {
-            flex-direction: column;
-            gap: var(--small-spacing);
-        }
+        display: contents;
     }
 
     .bio-text {
         border-bottom: 1px solid hsl(0, 0%, 0%);
-        width: 18.75em;
-
-        @media (width <= 426px) {
-            width: auto;
-        }
     }
 
     .label {
