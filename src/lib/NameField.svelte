@@ -44,18 +44,6 @@
         display: flex;
         gap: 0.625em;
         font-size: var(--font-size);
-
-        @media (width <= 430px) {
-            font-size: 0.8em;
-        }
-
-        @media (width <= 375px) {
-            font-size: 0.75em;
-        }
-
-        @media (width <= 325px) {
-            font-size: 0.7em;
-        }
     }
 
     .letter {
