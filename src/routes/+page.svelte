@@ -64,10 +64,13 @@
         display: flex;
         flex-direction: column;
         gap: var(--default-spacing);
-        border: thick double var(--dark-blue);
-        padding: var(--large-spacing);
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        @media (width >= 1150px) {
+            border: thick double var(--dark-blue);
+            padding: var(--large-spacing);
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
     }
 
     h1 {

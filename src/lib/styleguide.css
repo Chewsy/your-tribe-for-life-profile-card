@@ -66,8 +66,7 @@ html {
         padding: var(--default-spacing);
     }
 
-    @media (width >=1150px) {
-        padding: var(--large-spacing);
+    @media (width >1200px) {
         padding-left: 15em;
         padding-right: 15em;
     }
