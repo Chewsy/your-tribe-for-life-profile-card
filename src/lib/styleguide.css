@@ -18,7 +18,7 @@
 :root {
 
     /* Kleuren */
-    --dark-blue: hsl(205, 38%, 64%);
+    --dark-blue: hsl(205, 30%, 40%);
     --baby-blue: hsl(212, 25%, 88%);
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
