@@ -55,8 +55,6 @@
 
 <style>
     footer {
-        width: 100%;
-        height: 100px;
         height: 6.25em;
         margin-top: var(--large-spacing);
         background-color: var(--dark-blue);

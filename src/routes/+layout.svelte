@@ -1,8 +1,7 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
-    import Footer from '$lib/Footer.svelte';
+	import favicon from "$lib/assets/favicon.svg";
 
-let { children, data } = $props();
+	let { children, data } = $props();
 </script>
 
 <svelte:head>
@@ -10,5 +9,3 @@ let { children, data } = $props();
 </svelte:head>
 
 {@render children()}
-
-<Footer chama={data.chama} />
