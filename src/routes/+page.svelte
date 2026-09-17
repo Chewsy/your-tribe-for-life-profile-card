@@ -70,7 +70,7 @@
             background-color: var(--baby-blue);
             border: thick double var(--dark-blue);
             padding: var(--large-spacing);
-            border-radius: 10px;
+            border-radius: var(--radius);
             box-shadow:
                 rgba(0, 0, 0, 0.09) 0px 2px 1px,
                 rgba(0, 0, 0, 0.09) 0px 4px 2px,
