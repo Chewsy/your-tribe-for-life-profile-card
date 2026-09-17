@@ -18,21 +18,8 @@
 </div>
 
 <style>
-    p {
-        padding: 0;
-        margin: 0;
-    }
-
     .name-field {
-        display: flex;
-        flex-direction: row;
-        gap: var(--label-spacing);
-        margin-bottom: var(--default-spacing);
-
-        @media (width <= 426px) {
-            flex-direction: column;
-            gap: var(--small-spacing);
-        }
+        display: contents;
     }
 
     .label {
@@ -43,10 +30,6 @@
         display: flex;
         flex-direction: row;
         gap: var(--large-spacing);
-
-        @media (width <= 426px) {
-            flex-direction: column;
-        }
     }
 
     .word {
