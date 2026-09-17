@@ -60,5 +60,9 @@ html {
     background: var(--background);
     color: var(--black);
 
-    padding: var(--spacing-label);
+    padding: var(--large-spacing);
+
+    @media (width <=325px) {
+        padding: var(--default-spacing);
+    }
 }
