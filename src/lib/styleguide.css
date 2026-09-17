@@ -68,7 +68,7 @@ html {
 
     @media (width >=980px) {
         padding: var(--large-spacing);
-        padding-left: 12.5em;
-        padding-right: 12.5em;
+        padding-left: 15em;
+        padding-right: 15em;
     }
 }
