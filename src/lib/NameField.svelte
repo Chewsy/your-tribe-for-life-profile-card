@@ -44,10 +44,24 @@
         display: flex;
         gap: 0.625em;
         font-size: var(--font-size);
+
+        @media (width <= 430px) {
+            font-size: 0.8em;
+        }
+
+        @media (width <= 375px) {
+            font-size: 0.75em;
+        }
+
+        @media (width <= 325px) {
+            font-size: 0.7em;
+        }
     }
 
     .letter {
         background-color: var(--white);
+        aspect-ratio: 1 / 1;
+        width: 1.5em;
         text-align: center;
     }
 </style>
