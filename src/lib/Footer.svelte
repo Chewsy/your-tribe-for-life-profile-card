@@ -24,7 +24,7 @@
         <span>{chama.github_handle}</span>
     </a>
 
-    <a class="social_link" href="https://www.{chama.name}.nl">
+    <a class="social_link" href="{chama.website}">
         <svg
             fill="#ffffff"
             viewBox="0 0 32 32"
