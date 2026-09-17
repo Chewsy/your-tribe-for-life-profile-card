@@ -12,6 +12,7 @@
         display: flex;
         flex-direction: row;
         gap: 3.125em;
+        margin-bottom: var(--default-spacing);
 
         & p {
             padding: 0;
