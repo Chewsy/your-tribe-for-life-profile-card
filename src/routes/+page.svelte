@@ -40,6 +40,17 @@
         <TextField text={chama.fav_emoji} label="Emoji:" />
         <TextField text={chama.fav_animal} label="Dier:" />
     </section>
+
+    <div class="embed">
+        <iframe
+            data-testid="embed-iframe"
+            title="Favoriete Spotify nummer"
+            src="https://open.spotify.com/track/1JRZofiAZNPp4e4zn3oBl3"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+        ></iframe>
+    </div>
 </main>
 
 <style>
@@ -73,5 +84,20 @@
 
     .label {
         font-weight: var(--font-bold);
+    }
+
+    .embed {
+        width: 24rem;
+        border: 2px solid var(--accent);
+        border-radius: var(--radius);
+        background-color: var(--white);
+        overflow: hidden;
+    }
+
+    .embed iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
     }
 </style>
