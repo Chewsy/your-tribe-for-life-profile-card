@@ -11,7 +11,7 @@
     .text-field {
         display: flex;
         flex-direction: row;
-        gap: 3.125em;
+        gap: var(--label-spacing);
         margin-bottom: var(--default-spacing);
 
         @media (width <= 426px) {

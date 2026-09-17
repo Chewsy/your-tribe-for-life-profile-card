@@ -26,7 +26,7 @@
     .name-field {
         display: flex;
         flex-direction: row;
-        gap: var(--small-spacing);
+        gap: var(--label-spacing);
         margin-bottom: var(--default-spacing);
 
         @media (width <= 426px) {
@@ -42,7 +42,7 @@
     .letters {
         display: flex;
         flex-direction: row;
-        gap: var(--small-spacing);
+        gap: var(--large-spacing);
 
         @media (width <= 426px) {
             flex-direction: column;
