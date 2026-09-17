@@ -14,6 +14,11 @@
         gap: 3.125em;
         margin-bottom: var(--default-spacing);
 
+        @media (width <= 426px) {
+            flex-direction: column;
+            gap: var(--small-spacing);
+        }
+
         & p {
             padding: 0;
             margin: 0;
@@ -24,7 +29,7 @@
             border-bottom: 1px solid hsl(0, 0%, 0%);
         }
 
-        & .label{
+        & .label {
             font-weight: var(--font-bold);
         }
     }
