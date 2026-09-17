@@ -49,12 +49,15 @@
     footer {
         width: 100%;
         height: 100px;
+        height: 6.25em;
         margin-top: var(--large-spacing);
         background-color: var(--dark-blue);
+        color: var(--white);
     }
     h2 {
         color: var(--white);
         padding-left: var(--small-spacing);
         margin-bottom: var(--default-spacing);
     }
+
 </style>
