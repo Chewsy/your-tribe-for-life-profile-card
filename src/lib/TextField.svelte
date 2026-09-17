@@ -9,23 +9,9 @@
 
 <style>
     .text-field {
-        display: flex;
-        flex-direction: row;
-        gap: var(--label-spacing);
-        margin-bottom: var(--default-spacing);
-
-        @media (width <= 426px) {
-            flex-direction: column;
-            gap: var(--small-spacing);
-        }
-
-        & p {
-            padding: 0;
-            margin: 0;
-        }
+        display: contents;
 
         & .text {
-            width: 100px;
             border-bottom: 1px solid hsl(0, 0%, 0%);
         }
 
