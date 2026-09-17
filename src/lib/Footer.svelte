@@ -60,4 +60,15 @@
         margin-bottom: var(--default-spacing);
     }
 
+    .social_link {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: 0.313em;
+
+        & svg {
+            width: 1.5em;
+            aspect-ratio: 1 / 1;
+        }
+    }
 </style>
