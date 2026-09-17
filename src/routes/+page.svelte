@@ -75,6 +75,11 @@
         grid-template-columns: max-content 1fr;
         justify-content: space-between;
         row-gap: var(--large-spacing);
+        column-gap: 8em;
+
+        @media (width <= 426px) {
+            grid-template-columns: 1fr;
+        }
     }
 
     h2 {
