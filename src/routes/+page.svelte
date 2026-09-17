@@ -34,7 +34,10 @@
     <section>
         <h2>favorieten</h2>
         <TextField text={chama.fav_color} label="Kleur:" />
-        <TextField text={chama.fav_border_radius} label="Border-radius waarde:" />
+        <TextField
+            text={chama.fav_border_radius}
+            label="Border-radius waarde:"
+        />
         <TextField text={chama.fav_season} label="Seizoen:" />
         <TextField text={chama.fav_game} label="Gameseries:" />
         <TextField text={chama.fav_emoji} label="Emoji:" />
@@ -77,9 +80,24 @@
         margin-bottom: var(--default-spacing);
     }
 
+    .bio {
+        display: flex;
+        flex-direction: row;
+        gap: 3.125em;
+
+        @media (width <= 426px) {
+            flex-direction: column;
+            gap: var(--small-spacing);
+        }
+    }
+
     .bio-text {
         border-bottom: 1px solid hsl(0, 0%, 0%);
         width: 300px;
+
+        @media (width <= 426px) {
+            width: auto;
+        }
     }
 
     .label {
