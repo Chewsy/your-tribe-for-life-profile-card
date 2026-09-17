@@ -110,6 +110,10 @@
         border-radius: var(--radius);
         background-color: var(--white);
         overflow: hidden;
+
+        @media (width <= 426px) {
+            width: auto;
+        }
     }
 
     .embed iframe {
