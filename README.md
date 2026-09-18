@@ -41,7 +41,7 @@ De website maakt gebruik van herbruikbare componenten:
 
 ### Visitekaartje
 
-#### Media queries**
+#### Media queries
 https://github.com/Chewsy/your-tribe-for-life-profile-card/blob/cea2f758be0464e9082fd3d9fb0f0fad80aefd91/src/routes/%2Bpage.svelte#L69-L80
 https://github.com/Chewsy/your-tribe-for-life-profile-card/blob/cea2f758be0464e9082fd3d9fb0f0fad80aefd91/src/lib/styleguide.css#L69-L74
 
